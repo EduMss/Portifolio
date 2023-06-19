@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: url('./Imagens/fundo1.png') center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.div-fundo{
+    width: 100%;
+    height: 100%;
+}
+
+.div-Parte1{
+    padding-top: 50px;
+    margin: 0;
+}
+
+.div-QuemSouEu{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-QuemSouEu-Foto{
+    padding-top: 100px;
+    padding-left: 15%;
+}
+
+.MinhaFoto{
+    width: 350px;
+    height: 470px;
+    border-radius: 90px;
+}
+
+.div-QuemSouEu-Texto{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 165px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.h1-QuemSouEu{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 70px;
+}
+
+.h3-QuemSouEu{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.div-MinhasRedesSociais{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.logo-linkedin{
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+}
+
+.logo-github{
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+}
+
+.logo-instagram{
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+}
+
+.link{
+    padding: 75px;
+    
+}
+
+.div-Parte2{
+    padding-left: 75px;
+}
+
+.h1-Projetos{
+    font-size: 45px;
+    color: white;
+}
+
+li{
+    list-style: inside  url("Imagens/circulo2.png");
+    padding-top: 40px;
+}
+
+button{
+    font-size: 35px;
+    color: white;
+    background: border-box;
+    border: none;
+}
+/* .lista-Projetos  span[data-state="fechado"] p#descricao span */
+.lista-Projetos p{
+    font-size: 20px;
+    color: white;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.4s ease;
+}
+
+.lista-Projetos span{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.lista-Projetos span[data-state="fechado"]{
+    display: block;
+}
+
+.lista-Projetos a{
+    color: aqua;
+}
